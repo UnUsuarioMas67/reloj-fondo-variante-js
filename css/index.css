@@ -1,0 +1,67 @@
+:root {
+  --time-margin: 0 0 0 50px;
+}
+
+html,
+body {
+  height: 100%;
+  background: black;
+  margin: 0 0 0 0;
+}
+
+.preload {
+  display: none;
+}
+
+.background {
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-current {
+  z-index: 2;
+}
+
+#bg-next {
+  z-index: 1;
+}
+
+* {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.current-time {
+  z-index: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: left;
+  position: fixed;
+  font-size: 9em;
+  padding-right: 50px;
+  top: 65%;
+  left: 0;
+}
+
+.current-time #clock {
+  margin: var(--time-margin);
+}
+
+.current-time #clock .seconds {
+  font-size: 0.35em;
+  padding-left: 0.25em;
+}
+
+.current-time #date {
+  margin: var(--time-margin);
+  font-size: 0.35em;
+  padding-bottom: 25px;
+}
+/*# sourceMappingURL=index.css.map */
